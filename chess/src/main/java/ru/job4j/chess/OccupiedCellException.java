@@ -1,4 +1,9 @@
 package ru.job4j.chess;
 
-public class OccupiedCellException extends Exception {
+import ru.job4j.chess.firuges.Cell;
+
+public class OccupiedCellException extends RuntimeException {
+    public OccupiedCellException(String message) {
+        super(message);
+    }
 }
